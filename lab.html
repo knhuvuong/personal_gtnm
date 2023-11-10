@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Khánh Như</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+    <!-- =======================================================
+  * Template Name: DevFolio
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+    <style>
+        .nav-item .nav-link {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        #ex2-content .nav-item .nav-link {
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+
+        /* table */
+        .table-wrapper {
+            width: 100%;
+            margin: 30px auto;
+            background: #fff;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+        }
+
+        .table-title {
+            padding-bottom: 10px;
+            margin: 0 0 10px;
+        }
+
+        .table-title h2 {
+            margin: 6px 0 0;
+            font-size: 22px;
+        }
+
+        .table-title .add-new {
+            float: right;
+            height: 30px;
+            font-weight: bold;
+            font-size: 12px;
+            text-shadow: none;
+            min-width: 100px;
+            border-radius: 50px;
+            line-height: 13px;
+        }
+
+        .table-title .add-new i {
+            margin-right: 4px;
+        }
+
+        table.table {
+            table-layout: fixed;
+        }
+
+        table.table tr th,
+        table.table tr td {
+            border-color: #e9e9e9;
+        }
+
+        table.table th i {
+            font-size: 13px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        table.table th:last-child {
+            width: 150px;
+        }
+
+        table.table td a {
+            cursor: pointer;
+            display: inline-block;
+            margin: 0 5px;
+            min-width: 24px;
+        }
+
+        table.table td a.add {
+            color: #27C46B;
+        }
+
+        table.table td a.edit {
+            color: #FFC107;
+        }
+
+        table.table td a.delete {
+            color: #E34724;
+        }
+
+        table.table td i {
+            font-size: 19px;
+        }
+
+        table.table td a.add i {
+            font-size: 24px;
+            margin-right: -1px;
+            position: relative;
+            top: 3px;
+        }
+
+        table.table .form-control {
+            height: 32px;
+            line-height: 32px;
+            box-shadow: none;
+            border-radius: 2px;
+        }
+
+        table.table .form-control.error {
+            border-color: #f50000;
+        }
+
+        table.table td .add {
+            display: none;
+        }
+
+        #implement .flex-group {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <h1 class="logo"><a href="index.html">ifyou819</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="about.html">About</a></li>
+                    <li><a class="nav-link scrollto active" href="lab.html">Lab 4</a></li>
+                    <li><a class="nav-link scrollto" href="#work">Work</a></li>
+                    <li><a class="nav-link scrollto" href="#blog">Blog</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+        <section id="about" class="about-mf sect-pt4 route">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="box-shadow-full">
+                            <div class="row">
+                                <!-- Tabs navs -->
+                                <!-- <ul class="nav nav-tabs nav-fill mb-3" id="ex1" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link active" id="ex2-tab-1" data-mdb-toggle="tab"
+                                            href="#ex2-tabs-1" role="tab" aria-controls="ex2-tabs-1"
+                                            aria-selected="true">Lab 1</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="ex2-tab-2" data-mdb-toggle="tab" href="#ex2-tabs-2"
+                                            role="tab" aria-controls="ex2-tabs-2" aria-selected="false">Lab 2</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="ex2-tab-3" data-mdb-toggle="tab" href="#ex2-tabs-3"
+                                            role="tab" aria-controls="ex2-tabs-3" aria-selected="false">Lab 3</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="ex2-tab-3" data-mdb-toggle="tab" href="#ex2-tabs-3"
+                                            role="tab" aria-controls="ex2-tabs-3" aria-selected="false">Lab 4</a>
+                                    </li>
+                                </ul> -->
+                                <!-- Tabs navs -->
+
+                                <!-- Tabs content -->
+                                <div class="tab-content" id="ex2-content">
+                                    <!-- <div class="tab-pane fade show active" id="ex2-tabs-1" role="tabpanel" -->
+                                        <!-- aria-labelledby="ex2-tab-1"> -->
+                                        <div class="page-content page-container" id="page-content">
+                                            <div class="padding">
+                                                <div class="row container d-flex ">
+                                                    <div class="">
+                                                        <div class="mb-3">
+                                                            <ul class="nav nav-pills" id="myTab" role="tablist">
+                                                                <li class="nav-item"><a class="nav-link active"
+                                                                        id="requirement-tab" data-toggle="pill"
+                                                                        href="#requirement" role="tab"
+                                                                        aria-controls="home"
+                                                                        aria-selected="true">Requirement</a></li>
+                                                                <li class="nav-item"><a class="nav-link" id="design-tab"
+                                                                        data-toggle="pill" href="#design" role="tab"
+                                                                        aria-controls="contact"
+                                                                        aria-selected="false">Design</a></li>
+                                                                <li class="nav-item"><a class="nav-link"
+                                                                        id="implement-tab" data-toggle="pill"
+                                                                        href="#implement" role="tab"
+                                                                        aria-controls="contact"
+                                                                        aria-selected="false">Implement</a></li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="tab-content mb-4">
+                                                            <div class="tab-pane fade show active" id="requirement"
+                                                                role="tabpanel" aria-labelledby="home-tab">
+                                                                <p><strong>Yêu cầu: </strong>Chọn 1 đối tượng bất kỳ
+                                                                    trong thế giới thực, ví dụ như lớp, môn học, giảng
+                                                                    viên,…
+                                                                    Sau đó thiết kế chức năng Quản lý đối tượng đó trên
+                                                                    html bao gồm các tính năng thêm, sửa, xóa, tìm kiếm
+                                                                    cho đối tượng đó.
+                                                                    Ví dụ, làm chức năng Quản lý Sinh viên, bao gôm tính
+                                                                    năng thêm, sửa, xóa, tìm kiếm.
+                                                                    Chú ý: Các thành viên trong lớp, trong nhóm không
+                                                                    được chọn các đối tượng giống nhau.
+                                                                </p>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="design" role="tabpanel"
+                                                                aria-labelledby="contact-tab">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="paper">
+                                                                            <p><strong>Design on paper</strong></p>
+                                                                            <img src="assets/img/capture_2.jpg" class="img-fluid" style="width: 474px; height: 244px;">
+                                                                            <img src="assets/img/capture_1.jpg" class="img-fluid mb-4" style="width: 474px; height: 244px;">
+                                                                        </div>
+                                                                        <div class="d-flex justify-content-center">
+                                                                            <button type="button" class="btn btn-lg" style="background-color: #0062d3; color: white;" onclick="downloadAllImages(['assets/img/capture_2.jpg', 'assets/img/capture_1.jpg'])">Download</button>
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="figma">
+                                                                            <p><strong>Design on figma</strong></p>
+                                                                            <img src="assets/img/manager_1.jpg" class="img-fluid">
+                                                                            <img src="assets/img/manager_2.jpg" class="img-fluid mb-4">
+                                                                        </div>
+                                                                        <div class="d-flex justify-content-center">
+                                                                            <button type="button" class="btn btn-lg" style="background-color: #0062d3; color: white;" onclick="downloadAllImages(['assets/img/manager_1.jpg', 'assets/img/manager_2.jpg'])">Download</button>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex justify-content-center">
+                                                                    <button type="button" class="btn btn-lg" style="background-color: #0062d3; color: white;"><a style="color: white;" target="_blank" href="https://www.figma.com/file/D2zaXIIV1cVCuuIznfe40y/Lab-4?type=design&node-id=0-1&mode=design&t=PmULgve9Riw0rPvd-0">View Design</a></button>
+
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="tab-pane fade" id="implement" role="tabpanel"
+                                                                aria-labelledby="contact-tab">
+                                                                <div class="table-wrapper">
+                                                                    <div class="table-title">
+                                                                        <div class="row">
+                                                                            <div class="col-sm-7">
+                                                                                <h2>Jewelry <b>Details</b></h2>
+                                                                            </div>
+                                                                            <div class="col-sm-5">
+                                                                                <div class="flex-group">
+                                                                                <div class="input-group rounded">
+                                                                                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" id="search-input"/>
+                                                                                    <span class="input-group-text border-0" id="search-addon">
+                                                                                      <i class="fas fa-search"></i>
+                                                                                    </span>
+                                                                                  </div>
+                                                                                <button type="button"
+                                                                                    class="btn btn-info add-new" style="width: 150px;">
+                                                                                    <i class="fa fa-plus"></i> Add New
+                                                                                </button>
+                                                                            </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <table class="table table-bordered">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Name</th>
+                                                                                <th>Amount</th>
+                                                                                <th>Price</th>
+                                                                                <th>Actions</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>Diamond Ring</td>
+                                                                                <td>10</td>
+                                                                                <td>100000</td>
+                                                                                <td>
+                                                                                    <a class="add" title="Add"
+                                                                                        data-toggle="tooltip"><i
+                                                                                            class="material-icons">&#xE03B;</i></a>
+                                                                                    <a class="edit" title="Edit"
+                                                                                        data-toggle="tooltip"><i
+                                                                                            class="material-icons">&#xE254;</i></a>
+                                                                                    <a class="delete" title="Delete"
+                                                                                        data-toggle="tooltip"><i
+                                                                                            class="material-icons">&#xE872;</i></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Necklace</td>
+                                                                                <td>8</td>
+                                                                                <td>105000</td>
+                                                                                <td>
+                                                                                    <a class="add" title="Add"
+                                                                                        data-toggle="tooltip"><i
+                                                                                            class="material-icons">&#xE03B;</i></a>
+                                                                                    <a class="edit" title="Edit"
+                                                                                        data-toggle="tooltip"><i
+                                                                                            class="material-icons">&#xE254;</i></a>
+                                                                                    <a class="delete" title="Delete"
+                                                                                        data-toggle="tooltip"><i
+                                                                                            class="material-icons">&#xE872;</i></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Bracelet</td>
+                                                                                <td>10</td>
+                                                                                <td>180000</td>
+                                                                                <td>
+                                                                                    <a class="add" title="Add"
+                                                                                        data-toggle="tooltip"><i
+                                                                                            class="material-icons">&#xE03B;</i></a>
+                                                                                    <a class="edit" title="Edit"
+                                                                                        data-toggle="tooltip"><i
+                                                                                            class="material-icons">&#xE254;</i></a>
+                                                                                    <a class="delete" title="Delete"
+                                                                                        data-toggle="tooltip"><i
+                                                                                            class="material-icons">&#xE872;</i></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!-- </div> -->
+                                    <!-- <div class="tab-pane fade" id="ex2-tabs-2" role="tabpanel"
+                                        aria-labelledby="ex2-tab-2">
+                                        Tab 2 content
+                                    </div>
+                                    <div class="tab-pane fade" id="ex2-tabs-3" role="tabpanel"
+                                        aria-labelledby="ex2-tab-3">
+                                        Tab 3 content
+                                    </div> -->
+                                </div>
+                                <!-- Tabs content -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About Section -->
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-box">
+                        <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
+                        <div class="credits">
+                            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+            -->
+                            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer><!-- End  Footer -->
+
+    <script>
+        $(document).ready(function () {
+            // Kích hoạt chuyển tab
+            $('#myTab a').on('click', function (e) {
+                e.preventDefault()
+                $(this).tab('show')
+            })
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+            var actions = $("table td:last-child").html();
+            // Append table with add row form on add new button click
+            $(".add-new").click(function () {
+                $(this).attr("disabled", "disabled");
+                var index = $("table tbody tr:last-child").index();
+                var row = '<tr>' +
+                    '<td><input type="text" class="form-control" name="name" id="name"></td>' +
+                    '<td><input type="text" class="form-control" name="department" id="department"></td>' +
+                    '<td><input type="text" class="form-control" name="phone" id="phone"></td>' +
+                    '<td>' + actions + '</td>' +
+                    '</tr>';
+                $("table").append(row);
+                $("table tbody tr").eq(index + 1).find(".add, .edit").toggle();
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+            // Add row on add button click
+            $(document).on("click", ".add", function () {
+                var empty = false;
+                var input = $(this).parents("tr").find('input[type="text"]');
+                input.each(function () {
+                    if (!$(this).val()) {
+                        $(this).addClass("error");
+                        empty = true;
+                    } else {
+                        $(this).removeClass("error");
+                    }
+                });
+                $(this).parents("tr").find(".error").first().focus();
+                if (!empty) {
+                    input.each(function () {
+                        $(this).parent("td").html($(this).val());
+                    });
+                    $(this).parents("tr").find(".add, .edit").toggle();
+                    $(".add-new").removeAttr("disabled");
+                }
+            });
+            // Edit row on edit button click
+            $(document).on("click", ".edit", function () {
+                $(this).parents("tr").find("td:not(:last-child)").each(function () {
+                    $(this).html('<input type="text" class="form-control" value="' + $(this).text() + '">');
+                });
+                $(this).parents("tr").find(".add, .edit").toggle();
+                $(".add-new").attr("disabled", "disabled");
+            });
+            // Delete row on delete button click
+            $(document).on("click", ".delete", function () {
+                $(this).parents("tr").remove();
+                $(".add-new").removeAttr("disabled");
+            });
+        });
+    </script>
+
+<script>
+    $(document).ready(function () {
+        // Lắng nghe sự kiện khi người dùng nhập liệu vào ô tìm kiếm
+        $("#search-input").on("input", function () {
+            var searchValue = $(this).val().toLowerCase(); // Lấy giá trị từ ô tìm kiếm và chuyển thành chữ thường
+
+            // Lặp qua từng hàng trong bảng và ẩn/hiện dựa trên từ khóa tìm kiếm
+            $("table tbody tr").each(function () {
+                var text = $(this).text().toLowerCase(); // Lấy nội dung của hàng và chuyển thành chữ thường
+                // Kiểm tra xem có kết quả tìm kiếm hay không
+                if (text.indexOf(searchValue) !== -1) {
+                    $(this).show(); // Nếu có, hiển thị hàng
+                } else {
+                    $(this).hide(); // Ngược lại, ẩn đi
+                }
+            });
+        });
+    });
+</script>
+
+<script>
+    function downloadAllImages(imagePaths) {
+        imagePaths.forEach(function (imagePath) {
+            var link = document.createElement('a');
+            link.href = imagePath;
+            link.download = 'design_image.jpg';
+            link.click();
+        });
+    }
+</script>
+
+
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+
+
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
