@@ -18,7 +18,11 @@
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -35,6 +39,7 @@
 
 
 
+
     <!-- =======================================================
   * Template Name: DevFolio
   * Updated: Sep 18 2023 with Bootstrap v5.3.2
@@ -43,10 +48,10 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
     <style>
-        /* .nav-item .nav-link {
+        .nav-item .nav-link {
             font-size: 16px;
             font-weight: bold;
-        } */
+        }
 
         #ex2-content .nav-item .nav-link {
             font-size: 12px;
@@ -154,6 +159,47 @@
         #implement .flex-group {
             display: flex;
         }
+
+        /*implements*/
+        #implement5 .movies {
+            background-color: black;
+            color: white;
+        }
+
+        #implement5 .movies-container {
+            /* max-width: 968px;
+            max-height: auto; */
+            margin-left: 35px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        #implement5 .movies .heading {
+            color: white;
+            font-size: 22px;
+            padding: 8px;
+        }
+
+        #implement5 .movies h3 {
+            color: white;
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        #implement5 .movies h3 span {
+            font-size: 3px;
+        }
+
+        #implement5 .box .box-img img:hover {
+            transform: translateY(-10px);
+            transition: 0.2 all linear;
+        }
+
+        #implement5 .line {
+            border-bottom: 2px solid red;
+        }
     </style>
 </head>
 
@@ -171,7 +217,7 @@
                 <ul>
                     <li><a class="nav-link scrollto" href="index.html">Home</a></li>
                     <li><a class="nav-link scrollto" href="about.html">About</a></li>
-                    <li><a class="nav-link scrollto active" href="lab.html">Lab 4</a></li>
+                    <li><a class="nav-link scrollto active" href="lab.html">Lab</a></li>
                     <li><a class="nav-link scrollto" href="#work">Work</a></li>
                     <li><a class="nav-link scrollto" href="#blog">Blog</a></li>
                     <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
@@ -190,31 +236,31 @@
                         <div class="box-shadow-full">
                             <div class="row">
                                 <!-- Tabs navs -->
-                                <!-- <ul class="nav nav-tabs nav-fill mb-3" id="ex1" role="tablist">
+                                <ul class="nav nav-tabs nav-fill mb-3" id="ex1" role="tablist">
                                     <li class="nav-item" role="presentation">
                                         <a class="nav-link active" id="ex2-tab-1" data-mdb-toggle="tab"
                                             href="#ex2-tabs-1" role="tab" aria-controls="ex2-tabs-1"
-                                            aria-selected="true">Lab 1</a>
+                                            aria-selected="true">Lab 4</a>
                                     </li>
                                     <li class="nav-item" role="presentation">
                                         <a class="nav-link" id="ex2-tab-2" data-mdb-toggle="tab" href="#ex2-tabs-2"
-                                            role="tab" aria-controls="ex2-tabs-2" aria-selected="false">Lab 2</a>
+                                            role="tab" aria-controls="ex2-tabs-2" aria-selected="false">Lab 5</a>
+                                    </li>
+                                    <!-- <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="ex2-tab-3" data-mdb-toggle="tab" href="#ex2-tabs-3"
+                                            role="tab" aria-controls="ex2-tabs-3" aria-selected="false">Lab 6</a>
                                     </li>
                                     <li class="nav-item" role="presentation">
                                         <a class="nav-link" id="ex2-tab-3" data-mdb-toggle="tab" href="#ex2-tabs-3"
-                                            role="tab" aria-controls="ex2-tabs-3" aria-selected="false">Lab 3</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="ex2-tab-3" data-mdb-toggle="tab" href="#ex2-tabs-3"
-                                            role="tab" aria-controls="ex2-tabs-3" aria-selected="false">Lab 4</a>
-                                    </li>
-                                </ul> -->
+                                            role="tab" aria-controls="ex2-tabs-3" aria-selected="false">Lab 7</a>
+                                    </li> -->
+                                </ul>
                                 <!-- Tabs navs -->
 
                                 <!-- Tabs content -->
                                 <div class="tab-content" id="ex2-content">
-                                    <!-- <div class="tab-pane fade show active" id="ex2-tabs-1" role="tabpanel" -->
-                                        <!-- aria-labelledby="ex2-tab-1"> -->
+                                    <div class="tab-pane fade show active" id="ex2-tabs-1" role="tabpanel"
+                                        aria-labelledby="ex2-tab-1">
                                         <div class="page-content page-container" id="page-content">
                                             <div class="padding">
                                                 <div class="row container d-flex ">
@@ -259,32 +305,45 @@
                                                                     <div class="col-md-6">
                                                                         <div class="paper">
                                                                             <p><strong>Design on paper</strong></p>
-                                                                            <img src="assets/img/capture_2.jpg" class="img-fluid" style="width: 474px; height: 244px;">
-                                                                            <img src="assets/img/capture_1.jpg" class="img-fluid mb-4" style="width: 474px; height: 244px;">
+                                                                            <img src="assets/img/capture_2.jpg"
+                                                                                class="img-fluid"
+                                                                                style="width: 474px; height: 244px;">
+                                                                            <img src="assets/img/capture_1.jpg"
+                                                                                class="img-fluid mb-4"
+                                                                                style="width: 474px; height: 244px;">
                                                                         </div>
                                                                         <div class="d-flex justify-content-center">
-                                                                            <button type="button" class="btn btn-lg" style="background-color: #0062d3; color: white;" onclick="downloadAllImages(['assets/img/capture_2.jpg', 'assets/img/capture_1.jpg'])">Download</button>
+                                                                            <button type="button" class="btn btn-lg"
+                                                                                style="background-color: #0062d3; color: white;"
+                                                                                onclick="downloadAllImages(['assets/img/capture_2.jpg', 'assets/img/capture_1.jpg'])">Download</button>
 
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <div class="figma">
                                                                             <p><strong>Design on figma</strong></p>
-                                                                            <img src="assets/img/manager_1.jpg" class="img-fluid">
-                                                                            <img src="assets/img/manager_2.jpg" class="img-fluid mb-4">
+                                                                            <img src="assets/img/manager_1.jpg"
+                                                                                class="img-fluid">
+                                                                            <img src="assets/img/manager_2.jpg"
+                                                                                class="img-fluid mb-4">
                                                                         </div>
                                                                         <div class="d-flex justify-content-center">
-                                                                            <button type="button" class="btn btn-lg" style="background-color: #0062d3; color: white;" onclick="downloadAllImages(['assets/img/manager_1.jpg', 'assets/img/manager_2.jpg'])">Download</button>
+                                                                            <button type="button" class="btn btn-lg"
+                                                                                style="background-color: #0062d3; color: white;"
+                                                                                onclick="downloadAllImages(['assets/img/manager_1.jpg', 'assets/img/manager_2.jpg'])">Download</button>
 
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="d-flex justify-content-center">
-                                                                    <button type="button" class="btn btn-lg" style="background-color: #0062d3; color: white;"><a style="color: white;" target="_blank" href="https://www.figma.com/file/D2zaXIIV1cVCuuIznfe40y/Lab-4?type=design&node-id=0-1&mode=design&t=PmULgve9Riw0rPvd-0">View Design</a></button>
-
+                                                                    <button type="button" class="btn btn-lg"
+                                                                        style="background-color: #0062d3; color: white;"><a
+                                                                            style="color: white;" target="_blank"
+                                                                            href="https://www.figma.com/file/D2zaXIIV1cVCuuIznfe40y/Lab-4?type=design&node-id=0-1&mode=design&t=PmULgve9Riw0rPvd-0">View
+                                                                            Design</a></button>
                                                                 </div>
                                                             </div>
-                                                            
+
                                                             <div class="tab-pane fade" id="implement" role="tabpanel"
                                                                 aria-labelledby="contact-tab">
                                                                 <div class="table-wrapper">
@@ -295,17 +354,27 @@
                                                                             </div>
                                                                             <div class="col-sm-5">
                                                                                 <div class="flex-group">
-                                                                                <div class="input-group rounded">
-                                                                                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" id="search-input"/>
-                                                                                    <span class="input-group-text border-0" id="search-addon">
-                                                                                      <i class="fas fa-search"></i>
-                                                                                    </span>
-                                                                                  </div>
-                                                                                <button type="button"
-                                                                                    class="btn btn-info add-new" style="width: 150px;">
-                                                                                    <i class="fa fa-plus"></i> Add New
-                                                                                </button>
-                                                                            </div>
+                                                                                    <div class="input-group rounded">
+                                                                                        <input type="search"
+                                                                                            class="form-control rounded"
+                                                                                            placeholder="Search"
+                                                                                            aria-label="Search"
+                                                                                            aria-describedby="search-addon"
+                                                                                            id="search-input" />
+                                                                                        <span
+                                                                                            class="input-group-text border-0"
+                                                                                            id="search-addon">
+                                                                                            <i
+                                                                                                class="fas fa-search"></i>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <button type="button"
+                                                                                        class="btn btn-info add-new"
+                                                                                        style="width: 150px;">
+                                                                                        <i class="fa fa-plus"></i> Add
+                                                                                        New
+                                                                                    </button>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -377,15 +446,238 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    <!-- </div> -->
-                                    <!-- <div class="tab-pane fade" id="ex2-tabs-2" role="tabpanel"
+                                    </div>
+                                    <div class="tab-pane fade" id="ex2-tabs-2" role="tabpanel"
                                         aria-labelledby="ex2-tab-2">
-                                        Tab 2 content
+                                        <div class="page-content page-container" id="page-content">
+                                            <div class="padding">
+                                                <div class="row container d-flex ">
+                                                    <div class="">
+                                                        <div class="mb-3">
+                                                            <ul class="nav nav-pills" id="myTab" role="tablist">
+                                                                <li class="nav-item"><a class="nav-link active"
+                                                                        id="requirement-tab" data-toggle="pill"
+                                                                        href="#requirement5" role="tab"
+                                                                        aria-controls="home"
+                                                                        aria-selected="true">Requirement</a></li>
+                                                                <li class="nav-item"><a class="nav-link"
+                                                                        id="userScenario-tab" data-toggle="pill"
+                                                                        href="#userScenario5" role="tab"
+                                                                        aria-controls="contact"
+                                                                        aria-selected="false">User Scenario</a></li>
+                                                                <li class="nav-item"><a class="nav-link" id="design-tab"
+                                                                        data-toggle="pill" href="#design5" role="tab"
+                                                                        aria-controls="contact"
+                                                                        aria-selected="false">Design</a></li>
+                                                                <li class="nav-item"><a class="nav-link"
+                                                                        id="implement-tab" data-toggle="pill"
+                                                                        href="#implement5" role="tab"
+                                                                        aria-controls="contact"
+                                                                        aria-selected="false">Implement</a></li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="tab-content mb-4">
+                                                            <div class="tab-pane fade show active" id="requirement5"
+                                                                role="tabpanel" aria-labelledby="home-tab">
+                                                                <p><strong>Yêu cầu: </strong><br>(1) Tạo ra một user
+                                                                    scenario. <br>
+                                                                    (2) Chọn 1 bước trong user scenario để thiết kế 1
+                                                                    form giao diện Web trên công cụ thiết kế đã chọn.
+                                                                    Sau đó thiết kế trên Figma rồi chuyển sang html
+                                                                    tương ứng cho thiết kế này.
+                                                                    Upload lên github: trong file html có chèn hình ảnh
+                                                                    của user scenario ở (1) và đường dẫn của file thiết
+                                                                    kế ở (2).
+                                                                </p>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="userScenario5"
+                                                                role="tabpanel" aria-labelledby="contact-tab">
+                                                                <div class="row">
+                                                                    <div class="paper">
+                                                                        <p><strong>Như muốn xem phim nên truy cập vào
+                                                                                website và tiến hành việc đăng ký tài
+                                                                                khoản để xem phim</strong></p>
+                                                                        <img src="assets/img/userScenario.jpg"
+                                                                            class="img-fluid"
+                                                                            style="width: 100%; height: 100%;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="design5" role="tabpanel"
+                                                                aria-labelledby="contact-tab">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="paper">
+                                                                            <p><strong>Design on paper</strong></p>
+                                                                            <img src="assets/img/lab5_1.jpg"
+                                                                                class="img-fluid"
+                                                                                style="width: 100%; height: 100%;">
+                                                                        </div>
+                                                                        <div class="d-flex justify-content-center" style="margin-top: 30px;">
+                                                                            <button type="button" class="btn btn-lg"
+                                                                                style="background-color: #0062d3; color: white;"
+                                                                                onclick="downloadAllImages(['assets/img/lab5_1.jpg'])">Download</button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="figma">
+                                                                            <p><strong>Design on figma</strong></p>
+                                                                            <img src="assets/img/lab5.jpg"
+                                                                                class="img-fluid">
+                                                                        </div>
+                                                                        <div class="d-flex justify-content-center" style="margin-top: 80px;">
+                                                                            <button type="button" class="btn btn-lg"
+                                                                                style="background-color: #0062d3; color: white;"
+                                                                                onclick="downloadAllImages(['assets/img/lab5.jpg'])">Download</button>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex justify-content-center">
+                                                                    <button type="button" class="btn btn-lg"
+                                                                        style="background-color: #0062d3; color: white;"><a
+                                                                            style="color: white;" target="_blank"
+                                                                            href="https://www.figma.com/file/Famt6BexQfEwGpEBN400WD/Untitled?type=design&mode=design&t=UPSoA5QC7CHfVRh9-0">View
+                                                                            Design</a></button>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="implement5" role="tabpanel"
+                                                                aria-labelledby="contact-tab">
+                                                                <div class="contents order-2 order-md-1">
+                                                                    <div class="container">
+                                                                        <div
+                                                                            class="row align-items-center justify-content-center">
+                                                                            <div class="col-md-7 py-5">
+                                                                                <h3 class="mb-3">Đăng ký tài khoản xem phim</h3>
+                                                                                <form action="#" method="post">
+                                                                                    <div class="row">
+                                                                                        <div class="col-md-6">
+                                                                                            <div
+                                                                                                class="form-group first">
+                                                                                                <label for="fname"
+                                                                                                    style="margin: 10px 0px 10px;">Tên</label>
+                                                                                                <input type="text"
+                                                                                                    class="form-control"
+                                                                                                    id="fname">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-md-6">
+                                                                                            <div
+                                                                                                class="form-group first">
+                                                                                                <label for="lname"
+                                                                                                    style="margin: 10px 0px 10px;">Họ</label>
+                                                                                                <input type="text"
+                                                                                                    class="form-control"
+                                                                                                    id="lname">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row">
+                                                                                        <div class="col-md-12">
+                                                                                            <div
+                                                                                                class="form-group first">
+                                                                                                <label for="email"
+                                                                                                    style="margin: 10px 0px 10px;">Email</label>
+                                                                                                <input type="email"
+                                                                                                    class="form-control"
+                                                                                                    id="email">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row">
+                                                                                        <div class="col-md-12">
+                                                                                            <div
+                                                                                                class="form-group first">
+                                                                                                <label for="lname"
+                                                                                                    style="margin: 10px 0px 10px;">Số
+                                                                                                    điện thoại</label>
+                                                                                                <input type="text"
+                                                                                                    class="form-control"
+                                                                                                    id="lname">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row">
+                                                                                        <div class="col-md-6">
+
+                                                                                            <div
+                                                                                                class="form-group last mb-3">
+                                                                                                <label for="password"
+                                                                                                    style="margin: 10px 0px 10px;">Mật
+                                                                                                    khẩu</label>
+                                                                                                <input type="password"
+                                                                                                    class="form-control"
+                                                                                                    id="password">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-md-6">
+
+                                                                                            <div
+                                                                                                class="form-group last mb-3">
+                                                                                                <label for="re-password"
+                                                                                                    style="margin: 10px 0px 10px;">Xác
+                                                                                                    nhận mật
+                                                                                                    khẩu</label>
+                                                                                                <input type="password"
+                                                                                                    class="form-control"
+                                                                                                    id="re-password">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div
+                                                                                        class="d-flex mb-5 mt-4 align-items-center">
+                                                                                        <div
+                                                                                            class="d-flex align-items-center">
+                                                                                            <label
+                                                                                                class="control control--checkbox mb-0"><span
+                                                                                                    class="caption">Tạo
+                                                                                                    tài khoản mới nghĩa
+                                                                                                    là bạn đồng ý với <a
+                                                                                                        href="#">Điều
+                                                                                                        kiện và điều
+                                                                                                        khoản</a> và <a
+                                                                                                        href="#">Chính
+                                                                                                        sách và quyền
+                                                                                                        riêng tư</a> của
+                                                                                                    chúng tôi.</span>
+                                                                                                <input type="checkbox"
+                                                                                                    checked="checked" />
+                                                                                                <div
+                                                                                                    class="control__indicator">
+                                                                                                </div>
+                                                                                            </label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="d-flex align-items-center justify-content-center">
+                                                                                            <input type="submit"
+                                                                                                value="Đăng ký"
+                                                                                                class="btn px-5 btn-primary">
+                                                                                       
+                                                                                    </div>
+                                                                                    
+                                                                                </form>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="tab-pane fade" id="ex2-tabs-3" role="tabpanel"
                                         aria-labelledby="ex2-tab-3">
                                         Tab 3 content
-                                    </div> -->
+                                    </div>
                                 </div>
                                 <!-- Tabs content -->
 
@@ -484,36 +776,36 @@
         });
     </script>
 
-<script>
-    $(document).ready(function () {
-        // Lắng nghe sự kiện khi người dùng nhập liệu vào ô tìm kiếm
-        $("#search-input").on("input", function () {
-            var searchValue = $(this).val().toLowerCase(); // Lấy giá trị từ ô tìm kiếm và chuyển thành chữ thường
+    <script>
+        $(document).ready(function () {
+            // Lắng nghe sự kiện khi người dùng nhập liệu vào ô tìm kiếm
+            $("#search-input").on("input", function () {
+                var searchValue = $(this).val().toLowerCase(); // Lấy giá trị từ ô tìm kiếm và chuyển thành chữ thường
 
-            // Lặp qua từng hàng trong bảng và ẩn/hiện dựa trên từ khóa tìm kiếm
-            $("table tbody tr").each(function () {
-                var text = $(this).text().toLowerCase(); // Lấy nội dung của hàng và chuyển thành chữ thường
-                // Kiểm tra xem có kết quả tìm kiếm hay không
-                if (text.indexOf(searchValue) !== -1) {
-                    $(this).show(); // Nếu có, hiển thị hàng
-                } else {
-                    $(this).hide(); // Ngược lại, ẩn đi
-                }
+                // Lặp qua từng hàng trong bảng và ẩn/hiện dựa trên từ khóa tìm kiếm
+                $("table tbody tr").each(function () {
+                    var text = $(this).text().toLowerCase(); // Lấy nội dung của hàng và chuyển thành chữ thường
+                    // Kiểm tra xem có kết quả tìm kiếm hay không
+                    if (text.indexOf(searchValue) !== -1) {
+                        $(this).show(); // Nếu có, hiển thị hàng
+                    } else {
+                        $(this).hide(); // Ngược lại, ẩn đi
+                    }
+                });
             });
         });
-    });
-</script>
+    </script>
 
-<script>
-    function downloadAllImages(imagePaths) {
-        imagePaths.forEach(function (imagePath) {
-            var link = document.createElement('a');
-            link.href = imagePath;
-            link.download = 'design_image.jpg';
-            link.click();
-        });
-    }
-</script>
+    <script>
+        function downloadAllImages(imagePaths) {
+            imagePaths.forEach(function (imagePath) {
+                var link = document.createElement('a');
+                link.href = imagePath;
+                link.download = 'design_image.jpg';
+                link.click();
+            });
+        }
+    </script>
 
 
 
@@ -532,6 +824,10 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 
 
 
