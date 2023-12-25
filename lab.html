@@ -695,10 +695,10 @@
                                                                         id="userScenario-tab" data-toggle="pill"
                                                                         href="#ex1_6" role="tab" aria-controls="contact"
                                                                         aria-selected="false">Ex1</a></li>
-                                                                <!-- <li class="nav-item"><a class="nav-link"
+                                                                <li class="nav-item"><a class="nav-link"
                                                                         id="userScenario-tab" data-toggle="pill"
                                                                         href="#ex2_6" role="tab" aria-controls="contact"
-                                                                        aria-selected="false">Ex2</a></li> -->
+                                                                        aria-selected="false">Ex2</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="tab-content mb-4">
@@ -718,7 +718,8 @@
                                                                     về file thiết kế, có nút Download để download file
                                                                     thiết kế về nếu muốn.<br>
 
-                                                                    Implementation: nội dung phần hiện thực trên html<br>
+                                                                    Implementation: nội dung phần hiện thực trên
+                                                                    html<br>
 
                                                                     Upload lên Firebase / Github.
                                                                 </p>
@@ -728,69 +729,113 @@
                                                                 <div class="row">
                                                                     <!-- Tabs content -->
                                                                     <div class="tab-content" id="ex2-content">
-                                                                        <div class="tab-pane fade show active" id="ex2-tabs-1" role="tabpanel"
+                                                                        <div class="tab-pane fade show active"
+                                                                            id="ex2-tabs-1" role="tabpanel"
                                                                             aria-labelledby="ex2-tab-1">
-                                                                            <div class="page-content page-container" id="page-content">
+                                                                            <div class="page-content page-container"
+                                                                                id="page-content">
                                                                                 <div class="padding">
                                                                                     <div class="row container d-flex ">
                                                                                         <div class="">
                                                                                             <div class="mb-3">
-                                                                                                <ul class="nav nav-pills" id="myTab" role="tablist">
-                                                                                                    <li class="nav-item"><a class="nav-link active"
-                                                                                                            id="requirement-tab" data-toggle="pill"
-                                                                                                            href="#design16" role="tab"
+                                                                                                <ul class="nav nav-pills"
+                                                                                                    id="myTab"
+                                                                                                    role="tablist">
+                                                                                                    <li
+                                                                                                        class="nav-item">
+                                                                                                        <a class="nav-link active"
+                                                                                                            id="requirement-tab"
+                                                                                                            data-toggle="pill"
+                                                                                                            href="#design16"
+                                                                                                            role="tab"
                                                                                                             aria-controls="home"
-                                                                                                            aria-selected="true">Design</a></li>
-                                                                                                    <li class="nav-item"><a class="nav-link" id="design-tab"
-                                                                                                            data-toggle="pill" href="#implement16" role="tab"
+                                                                                                            aria-selected="true">Design</a>
+                                                                                                    </li>
+                                                                                                    <li
+                                                                                                        class="nav-item">
+                                                                                                        <a class="nav-link"
+                                                                                                            id="design-tab"
+                                                                                                            data-toggle="pill"
+                                                                                                            href="#implement16"
+                                                                                                            role="tab"
                                                                                                             aria-controls="contact"
-                                                                                                            aria-selected="false">Implement</a></li>
-                                    
+                                                                                                            aria-selected="false">Implement</a>
+                                                                                                    </li>
+
                                                                                                 </ul>
                                                                                             </div>
-                                                                                            <div class="tab-content mb-4">
-                                                                                                <div class="tab-pane fade show active" id="design16" role="tabpanel"
+                                                                                            <div
+                                                                                                class="tab-content mb-4">
+                                                                                                <div class="tab-pane fade show active"
+                                                                                                    id="design16"
+                                                                                                    role="tabpanel"
                                                                                                     aria-labelledby="contact-tab">
                                                                                                     <div class="row">
-                                                                                                        <div class="col-md-6">
-                                                                                                            <div class="paper">
-                                                                                                                <p><strong>Design on paper</strong></p>
+                                                                                                        <div
+                                                                                                            class="col-md-6">
+                                                                                                            <div
+                                                                                                                class="paper">
+                                                                                                                <p><strong>Design
+                                                                                                                        on
+                                                                                                                        paper</strong>
+                                                                                                                </p>
                                                                                                                 <img src="assets/img/ex1.jpg"
-                                                                                                                class="img-fluid">
+                                                                                                                    class="img-fluid">
                                                                                                             </div>
-                                                                                                            <div class="d-flex justify-content-center">
-                                                                                                                <button type="button" class="btn btn-lg"
+                                                                                                            <div
+                                                                                                                class="d-flex justify-content-center">
+                                                                                                                <button
+                                                                                                                    type="button"
+                                                                                                                    class="btn btn-lg"
                                                                                                                     style="background-color: #0062d3; color: white; margin-top: 20px;"
                                                                                                                     onclick="downloadAllImages(['assets/img/ex1.jpg'])">Download</button>
-                                    
+
                                                                                                             </div>
                                                                                                         </div>
-                                                                                                        <div class="col-md-6">
-                                                                                                            <div class="figma">
-                                                                                                                <p><strong>Design on figma</strong></p>
+                                                                                                        <div
+                                                                                                            class="col-md-6">
+                                                                                                            <div
+                                                                                                                class="figma">
+                                                                                                                <p><strong>Design
+                                                                                                                        on
+                                                                                                                        figma</strong>
+                                                                                                                </p>
                                                                                                                 <img src="assets/img/ex1Figma.jpg"
                                                                                                                     class="img-fluid mb-4">
                                                                                                             </div>
-                                                                                                            <div class="d-flex justify-content-center">
-                                                                                                                <button type="button" class="btn btn-lg"
-                                                                                                                    style="background-color: #0062d3; color: white; margin-top: 35px;"
+                                                                                                            <div
+                                                                                                                class="d-flex justify-content-center">
+                                                                                                                <button
+                                                                                                                    type="button"
+                                                                                                                    class="btn btn-lg"
+                                                                                                                    style="background-color: #0062d3; color: white; margin-top: 45px;"
                                                                                                                     onclick="downloadAllImages(['assets/img/ex1Figma.jpg'])">Download</button>
-                                    
+
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </div>
-                                                                                                    <div class="d-flex justify-content-center">
-                                                                                                        <button type="button" class="btn btn-lg"
+                                                                                                    <div
+                                                                                                        class="d-flex justify-content-center">
+                                                                                                        <button
+                                                                                                            type="button"
+                                                                                                            class="btn btn-lg"
                                                                                                             style="background-color: #0062d3; color: white; margin-top: 35px;"><a
-                                                                                                                style="color: white;" target="_blank"
+                                                                                                                style="color: white;"
+                                                                                                                target="_blank"
                                                                                                                 href="https://www.figma.com/file/BxuLvByaj2ntVlhFmwZkuZ/Untitled?type=design&node-id=0-1&mode=design&t=EM7gMagXK8X3exag-0">View
                                                                                                                 Design</a></button>
                                                                                                     </div>
                                                                                                 </div>
-                                    
-                                                                                                <div class="tab-pane fade" id="implement16" role="tabpanel"
+
+                                                                                                <div class="tab-pane fade"
+                                                                                                    id="implement16"
+                                                                                                    role="tabpanel"
                                                                                                     aria-labelledby="contact-tab">
-                                                                                                    <iframe class="iframe-2" src="ex1.html" height="1000px" width="100%"></iframe>
+                                                                                                    <iframe
+                                                                                                        class="iframe-2"
+                                                                                                        src="ex1.html"
+                                                                                                        height="1000px"
+                                                                                                        width="100%"></iframe>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
@@ -798,115 +843,210 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <!-- <div class="tab-pane fade" id="ex2-tabs-2" role="tabpanel"
-                                                                            aria-labelledby="ex2-tab-2">
-                                                                            <div class="page-content page-container" id="page-content">
+                                                                        <div class="tab-pane fade" id="ex2-tabs-2"
+                                                                            role="tabpanel" aria-labelledby="ex2-tab-2">
+                                                                            <div class="page-content page-container"
+                                                                                id="page-content">
                                                                                 <div class="padding">
                                                                                     <div class="row container d-flex ">
                                                                                         <div class="">
                                                                                             <div class="mb-3">
-                                                                                                <ul class="nav nav-pills" id="myTab" role="tablist">
-                                                                                                    <li class="nav-item"><a class="nav-link active"
-                                                                                                            id="requirement-tab" data-toggle="pill"
-                                                                                                            href="#requirement5" role="tab"
+                                                                                                <ul class="nav nav-pills"
+                                                                                                    id="myTab"
+                                                                                                    role="tablist">
+                                                                                                    <li
+                                                                                                        class="nav-item">
+                                                                                                        <a class="nav-link active"
+                                                                                                            id="requirement-tab"
+                                                                                                            data-toggle="pill"
+                                                                                                            href="#requirement5"
+                                                                                                            role="tab"
                                                                                                             aria-controls="home"
-                                                                                                            aria-selected="true">Requirement</a></li>
-                                                                                                    <li class="nav-item"><a class="nav-link"
-                                                                                                            id="userScenario-tab" data-toggle="pill"
-                                                                                                            href="#userScenario5" role="tab"
+                                                                                                            aria-selected="true">Requirement</a>
+                                                                                                    </li>
+                                                                                                    <li
+                                                                                                        class="nav-item">
+                                                                                                        <a class="nav-link"
+                                                                                                            id="userScenario-tab"
+                                                                                                            data-toggle="pill"
+                                                                                                            href="#userScenario5"
+                                                                                                            role="tab"
                                                                                                             aria-controls="contact"
-                                                                                                            aria-selected="false">User Scenario</a></li>
-                                                                                                    <li class="nav-item"><a class="nav-link" id="design-tab"
-                                                                                                            data-toggle="pill" href="#design5" role="tab"
+                                                                                                            aria-selected="false">User
+                                                                                                            Scenario</a>
+                                                                                                    </li>
+                                                                                                    <li
+                                                                                                        class="nav-item">
+                                                                                                        <a class="nav-link"
+                                                                                                            id="design-tab"
+                                                                                                            data-toggle="pill"
+                                                                                                            href="#design5"
+                                                                                                            role="tab"
                                                                                                             aria-controls="contact"
-                                                                                                            aria-selected="false">Design</a></li>
-                                                                                                    <li class="nav-item"><a class="nav-link"
-                                                                                                            id="implement-tab" data-toggle="pill"
-                                                                                                            href="#implement5" role="tab"
+                                                                                                            aria-selected="false">Design</a>
+                                                                                                    </li>
+                                                                                                    <li
+                                                                                                        class="nav-item">
+                                                                                                        <a class="nav-link"
+                                                                                                            id="implement-tab"
+                                                                                                            data-toggle="pill"
+                                                                                                            href="#implement5"
+                                                                                                            role="tab"
                                                                                                             aria-controls="contact"
-                                                                                                            aria-selected="false">Implement</a></li>
-                                    
+                                                                                                            aria-selected="false">Implement</a>
+                                                                                                    </li>
+
                                                                                                 </ul>
                                                                                             </div>
-                                                                                            <div class="tab-content mb-4">
-                                                                                                <div class="tab-pane fade show active" id="requirement5"
-                                                                                                    role="tabpanel" aria-labelledby="home-tab">
-                                                                                                    <p><strong>Yêu cầu: </strong><br>(1) Tạo ra một user
+                                                                                            <div
+                                                                                                class="tab-content mb-4">
+                                                                                                <div class="tab-pane fade show active"
+                                                                                                    id="requirement5"
+                                                                                                    role="tabpanel"
+                                                                                                    aria-labelledby="home-tab">
+                                                                                                    <p><strong>Yêu cầu:
+                                                                                                        </strong><br>(1)
+                                                                                                        Tạo ra một user
                                                                                                         scenario. <br>
-                                                                                                        (2) Chọn 1 bước trong user scenario để thiết kế 1
-                                                                                                        form giao diện Web trên công cụ thiết kế đã chọn.
-                                                                                                        Sau đó thiết kế trên Figma rồi chuyển sang html
-                                                                                                        tương ứng cho thiết kế này.
-                                                                                                        Upload lên github: trong file html có chèn hình ảnh
-                                                                                                        của user scenario ở (1) và đường dẫn của file thiết
+                                                                                                        (2) Chọn 1 bước
+                                                                                                        trong user
+                                                                                                        scenario để
+                                                                                                        thiết kế 1
+                                                                                                        form giao diện
+                                                                                                        Web trên công cụ
+                                                                                                        thiết kế đã
+                                                                                                        chọn.
+                                                                                                        Sau đó thiết kế
+                                                                                                        trên Figma rồi
+                                                                                                        chuyển sang html
+                                                                                                        tương ứng cho
+                                                                                                        thiết kế này.
+                                                                                                        Upload lên
+                                                                                                        github: trong
+                                                                                                        file html có
+                                                                                                        chèn hình ảnh
+                                                                                                        của user
+                                                                                                        scenario ở (1)
+                                                                                                        và đường dẫn của
+                                                                                                        file thiết
                                                                                                         kế ở (2).
                                                                                                     </p>
                                                                                                 </div>
-                                                                                                <div class="tab-pane fade" id="userScenario5"
-                                                                                                    role="tabpanel" aria-labelledby="contact-tab">
+                                                                                                <div class="tab-pane fade"
+                                                                                                    id="userScenario5"
+                                                                                                    role="tabpanel"
+                                                                                                    aria-labelledby="contact-tab">
                                                                                                     <div class="row">
-                                                                                                        <div class="paper">
-                                                                                                            <p><strong>Như muốn xem phim nên truy cập vào
-                                                                                                                    website và tiến hành việc đăng ký tài
-                                                                                                                    khoản để xem phim</strong></p>
+                                                                                                        <div
+                                                                                                            class="paper">
+                                                                                                            <p><strong>Như
+                                                                                                                    muốn
+                                                                                                                    xem
+                                                                                                                    phim
+                                                                                                                    nên
+                                                                                                                    truy
+                                                                                                                    cập
+                                                                                                                    vào
+                                                                                                                    website
+                                                                                                                    và
+                                                                                                                    tiến
+                                                                                                                    hành
+                                                                                                                    việc
+                                                                                                                    đăng
+                                                                                                                    ký
+                                                                                                                    tài
+                                                                                                                    khoản
+                                                                                                                    để
+                                                                                                                    xem
+                                                                                                                    phim</strong>
+                                                                                                            </p>
                                                                                                             <img src="assets/img/userScenario.jpg"
                                                                                                                 class="img-fluid"
                                                                                                                 style="width: 100%; height: 100%;">
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </div>
-                                                                                                <div class="tab-pane fade" id="design5" role="tabpanel"
+                                                                                                <div class="tab-pane fade"
+                                                                                                    id="design5"
+                                                                                                    role="tabpanel"
                                                                                                     aria-labelledby="contact-tab">
                                                                                                     <div class="row">
-                                                                                                        <div class="col-md-6">
-                                                                                                            <div class="paper">
-                                                                                                                <p><strong>Design on paper</strong></p>
+                                                                                                        <div
+                                                                                                            class="col-md-6">
+                                                                                                            <div
+                                                                                                                class="paper">
+                                                                                                                <p><strong>Design
+                                                                                                                        on
+                                                                                                                        paper</strong>
+                                                                                                                </p>
                                                                                                                 <img src="assets/img/lab5_1.jpg"
                                                                                                                     class="img-fluid"
                                                                                                                     style="width: 100%; height: 100%;">
                                                                                                             </div>
                                                                                                             <div class="d-flex justify-content-center"
                                                                                                                 style="margin-top: 30px;">
-                                                                                                                <button type="button" class="btn btn-lg"
+                                                                                                                <button
+                                                                                                                    type="button"
+                                                                                                                    class="btn btn-lg"
                                                                                                                     style="background-color: #0062d3; color: white;"
                                                                                                                     onclick="downloadAllImages(['assets/img/lab5_1.jpg'])">Download</button>
                                                                                                             </div>
                                                                                                         </div>
-                                                                                                        <div class="col-md-6">
-                                                                                                            <div class="figma">
-                                                                                                                <p><strong>Design on figma</strong></p>
+                                                                                                        <div
+                                                                                                            class="col-md-6">
+                                                                                                            <div
+                                                                                                                class="figma">
+                                                                                                                <p><strong>Design
+                                                                                                                        on
+                                                                                                                        figma</strong>
+                                                                                                                </p>
                                                                                                                 <img src="assets/img/lab5.jpg"
                                                                                                                     class="img-fluid">
                                                                                                             </div>
                                                                                                             <div class="d-flex justify-content-center"
                                                                                                                 style="margin-top: 80px;">
-                                                                                                                <button type="button" class="btn btn-lg"
+                                                                                                                <button
+                                                                                                                    type="button"
+                                                                                                                    class="btn btn-lg"
                                                                                                                     style="background-color: #0062d3; color: white;"
                                                                                                                     onclick="downloadAllImages(['assets/img/lab5.jpg'])">Download</button>
-                                    
+
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </div>
-                                                                                                    <div class="d-flex justify-content-center">
-                                                                                                        <button type="button" class="btn btn-lg"
+                                                                                                    <div
+                                                                                                        class="d-flex justify-content-center">
+                                                                                                        <button
+                                                                                                            type="button"
+                                                                                                            class="btn btn-lg"
                                                                                                             style="background-color: #0062d3; color: white;"><a
-                                                                                                                style="color: white;" target="_blank"
+                                                                                                                style="color: white;"
+                                                                                                                target="_blank"
                                                                                                                 href="https://www.figma.com/file/Famt6BexQfEwGpEBN400WD/Untitled?type=design&mode=design&t=UPSoA5QC7CHfVRh9-0">View
                                                                                                                 Design</a></button>
-                                    
+                                                                                                    </div>
+                                                                                                    <div class="tab-pane fade"
+                                                                                                        id="implement16"
+                                                                                                        role="tabpanel"
+                                                                                                        aria-labelledby="contact-tab">
+                                                                                                        <iframe
+                                                                                                            class="iframe-2"
+                                                                                                            src="ex1.html"
+                                                                                                            height="1000px"
+                                                                                                            width="100%"></iframe>
                                                                                                     </div>
                                                                                                 </div>
-                                            
+
                                                                                             </div>
-                                    
+
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                        </div>                                                                     -->
+                                                                        </div> -->
                                                                     </div>
                                                                     <!-- Tabs content -->
-                                    
+
                                                                 </div>
                                                             </div>
                                                             <div class="tab-pane fade" id="ex2_6" role="tabpanel"
@@ -914,75 +1054,115 @@
                                                                 <div class="row">
                                                                     <!-- Tabs content -->
                                                                     <div class="tab-content" id="ex2-content">
-                                                                        <div class="tab-pane fade show active" id="ex2-tabs-1" role="tabpanel"
+                                                                        <div class="tab-pane fade show active"
+                                                                            id="ex2-tabs-1" role="tabpanel"
                                                                             aria-labelledby="ex2-tab-1">
-                                                                            <div class="page-content page-container" id="page-content">
+                                                                            <div class="page-content page-container"
+                                                                                id="page-content">
                                                                                 <div class="padding">
                                                                                     <div class="row container d-flex ">
                                                                                         <div class="">
                                                                                             <div class="mb-3">
-                                                                                                <ul class="nav nav-pills" id="myTab" role="tablist">
-                                                                                                    <li class="nav-item"><a class="nav-link active"
-                                                                                                            id="requirement-tab" data-toggle="pill"
-                                                                                                            href="#design6" role="tab"
+                                                                                                <ul class="nav nav-pills"
+                                                                                                    id="myTab"
+                                                                                                    role="tablist">
+                                                                                                    <li
+                                                                                                        class="nav-item">
+                                                                                                        <a class="nav-link active"
+                                                                                                            id="requirement-tab"
+                                                                                                            data-toggle="pill"
+                                                                                                            href="#design6"
+                                                                                                            role="tab"
                                                                                                             aria-controls="home"
-                                                                                                            aria-selected="true">Design</a></li>
-                                                                                                    <li class="nav-item"><a class="nav-link" id="design-tab"
-                                                                                                            data-toggle="pill" href="#implement6" role="tab"
+                                                                                                            aria-selected="true">Design</a>
+                                                                                                    </li>
+                                                                                                    <li
+                                                                                                        class="nav-item">
+                                                                                                        <a class="nav-link"
+                                                                                                            id="design-tab"
+                                                                                                            data-toggle="pill"
+                                                                                                            href="#implement6"
+                                                                                                            role="tab"
                                                                                                             aria-controls="contact"
-                                                                                                            aria-selected="false">Implement</a></li>
-                                    
+                                                                                                            aria-selected="false">Implement</a>
+                                                                                                    </li>
+
                                                                                                 </ul>
                                                                                             </div>
-                                                                                            <div class="tab-content mb-4">
-                                                                                                <div class="tab-pane fade show active" id="design6" role="tabpanel"
+                                                                                            <div
+                                                                                                class="tab-content mb-4">
+                                                                                                <div class="tab-pane fade show active"
+                                                                                                    id="design6"
+                                                                                                    role="tabpanel"
                                                                                                     aria-labelledby="contact-tab">
                                                                                                     <div class="row">
-                                                                                                        <div class="col-md-6">
-                                                                                                            <div class="paper">
-                                                                                                                <p><strong>Design on paper</strong></p>
-                                                                                                                <img src="assets/img/capture_2.jpg"
+                                                                                                        <div
+                                                                                                            class="col-md-6">
+                                                                                                            <div
+                                                                                                                class="paper">
+                                                                                                                <p><strong>Design
+                                                                                                                        on
+                                                                                                                        paper</strong>
+                                                                                                                </p>
+                                                                                                                <img src="assets/img/ex2.jpg"
                                                                                                                     class="img-fluid"
                                                                                                                     style="width: 474px; height: 244px;">
-                                                                                                                <img src="assets/img/capture_1.jpg"
-                                                                                                                    class="img-fluid mb-4"
-                                                                                                                    style="width: 474px; height: 244px;">
                                                                                                             </div>
-                                                                                                            <div class="d-flex justify-content-center">
-                                                                                                                <button type="button" class="btn btn-lg"
-                                                                                                                    style="background-color: #0062d3; color: white;"
-                                                                                                                    onclick="downloadAllImages(['assets/img/capture_2.jpg', 'assets/img/capture_1.jpg'])">Download</button>
-                                    
+                                                                                                            <div
+                                                                                                                class="d-flex justify-content-center">
+                                                                                                                <button
+                                                                                                                    type="button"
+                                                                                                                    class="btn btn-lg"
+                                                                                                                    style="background-color: #0062d3; color: white; margin-top: 320px;"
+                                                                                                                    onclick="downloadAllImages(['assets/img/ex2.jpg'])">Download</button>
+
                                                                                                             </div>
                                                                                                         </div>
-                                                                                                        <div class="col-md-6">
-                                                                                                            <div class="figma">
-                                                                                                                <p><strong>Design on figma</strong></p>
-                                                                                                                <img src="assets/img/manager_1.jpg"
+                                                                                                        <div
+                                                                                                            class="col-md-6">
+                                                                                                            <div
+                                                                                                                class="figma">
+                                                                                                                <p><strong>Design
+                                                                                                                        on
+                                                                                                                        figma</strong>
+                                                                                                                </p>
+                                                                                                                <img src="assets/img/ex2Figma.jpg"
                                                                                                                     class="img-fluid">
-                                                                                                                <img src="assets/img/manager_2.jpg"
-                                                                                                                    class="img-fluid mb-4">
+                                                                                                    
                                                                                                             </div>
-                                                                                                            <div class="d-flex justify-content-center">
-                                                                                                                <button type="button" class="btn btn-lg"
+                                                                                                            <div
+                                                                                                                class="d-flex justify-content-center">
+                                                                                                                <button
+                                                                                                                    type="button"
+                                                                                                                    class="btn btn-lg"
                                                                                                                     style="background-color: #0062d3; color: white;"
-                                                                                                                    onclick="downloadAllImages(['assets/img/manager_1.jpg', 'assets/img/manager_2.jpg'])">Download</button>
-                                    
+                                                                                                                    onclick="downloadAllImages(['assets/img/ex2Figma'])">Download</button>
+
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </div>
-                                                                                                    <div class="d-flex justify-content-center">
-                                                                                                        <button type="button" class="btn btn-lg"
+                                                                                                    <div
+                                                                                                        class="d-flex justify-content-center">
+                                                                                                        <button
+                                                                                                            type="button"
+                                                                                                            class="btn btn-lg"
                                                                                                             style="background-color: #0062d3; color: white;"><a
-                                                                                                                style="color: white;" target="_blank"
-                                                                                                                href="https://www.figma.com/file/D2zaXIIV1cVCuuIznfe40y/Lab-4?type=design&node-id=0-1&mode=design&t=PmULgve9Riw0rPvd-0">View
+                                                                                                                style="color: white;"
+                                                                                                                target="_blank"
+                                                                                                                href="https://www.figma.com/file/k92Rq6VXh4o22QYj8lIGjV/Untitled?type=design&node-id=0-1&mode=design&t=4w1A0RS8CoanqSI3-0">View
                                                                                                                 Design</a></button>
                                                                                                     </div>
                                                                                                 </div>
-                                    
-                                                                                                <div class="tab-pane fade" id="implement6" role="tabpanel"
+
+                                                                                                <div class="tab-pane fade"
+                                                                                                    id="implement6"
+                                                                                                    role="tabpanel"
                                                                                                     aria-labelledby="contact-tab">
-                                                                                                    <iframe class="iframe-2" src="ex2.html" height="1000px" width="100%"></iframe>
+                                                                                                    <iframe
+                                                                                                        class="iframe-2"
+                                                                                                        src="ex2.html"
+                                                                                                        height="1000px"
+                                                                                                        width="100%"></iframe>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
@@ -990,189 +1170,313 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="tab-pane fade" id="ex2-tabs-2" role="tabpanel"
-                                                                            aria-labelledby="ex2-tab-2">
-                                                                            <div class="page-content page-container" id="page-content">
+                                                                        <div class="tab-pane fade" id="ex2-tabs-2"
+                                                                            role="tabpanel" aria-labelledby="ex2-tab-2">
+                                                                            <div class="page-content page-container"
+                                                                                id="page-content">
                                                                                 <div class="padding">
                                                                                     <div class="row container d-flex ">
                                                                                         <div class="">
                                                                                             <div class="mb-3">
-                                                                                                <ul class="nav nav-pills" id="myTab" role="tablist">
-                                                                                                    <li class="nav-item"><a class="nav-link active"
-                                                                                                            id="requirement-tab" data-toggle="pill"
-                                                                                                            href="#requirement5" role="tab"
+                                                                                                <ul class="nav nav-pills"
+                                                                                                    id="myTab"
+                                                                                                    role="tablist">
+                                                                                                    <li
+                                                                                                        class="nav-item">
+                                                                                                        <a class="nav-link active"
+                                                                                                            id="requirement-tab"
+                                                                                                            data-toggle="pill"
+                                                                                                            href="#requirement5"
+                                                                                                            role="tab"
                                                                                                             aria-controls="home"
-                                                                                                            aria-selected="true">Requirement</a></li>
-                                                                                                    <li class="nav-item"><a class="nav-link"
-                                                                                                            id="userScenario-tab" data-toggle="pill"
-                                                                                                            href="#userScenario5" role="tab"
+                                                                                                            aria-selected="true">Requirement</a>
+                                                                                                    </li>
+                                                                                                    <li
+                                                                                                        class="nav-item">
+                                                                                                        <a class="nav-link"
+                                                                                                            id="userScenario-tab"
+                                                                                                            data-toggle="pill"
+                                                                                                            href="#userScenario5"
+                                                                                                            role="tab"
                                                                                                             aria-controls="contact"
-                                                                                                            aria-selected="false">User Scenario</a></li>
-                                                                                                    <li class="nav-item"><a class="nav-link" id="design-tab"
-                                                                                                            data-toggle="pill" href="#design5" role="tab"
+                                                                                                            aria-selected="false">User
+                                                                                                            Scenario</a>
+                                                                                                    </li>
+                                                                                                    <li
+                                                                                                        class="nav-item">
+                                                                                                        <a class="nav-link"
+                                                                                                            id="design-tab"
+                                                                                                            data-toggle="pill"
+                                                                                                            href="#design5"
+                                                                                                            role="tab"
                                                                                                             aria-controls="contact"
-                                                                                                            aria-selected="false">Design</a></li>
-                                                                                                    <li class="nav-item"><a class="nav-link"
-                                                                                                            id="implement-tab" data-toggle="pill"
-                                                                                                            href="#implement5" role="tab"
+                                                                                                            aria-selected="false">Design</a>
+                                                                                                    </li>
+                                                                                                    <li
+                                                                                                        class="nav-item">
+                                                                                                        <a class="nav-link"
+                                                                                                            id="implement-tab"
+                                                                                                            data-toggle="pill"
+                                                                                                            href="#implement5"
+                                                                                                            role="tab"
                                                                                                             aria-controls="contact"
-                                                                                                            aria-selected="false">Implement</a></li>
-                                    
+                                                                                                            aria-selected="false">Implement</a>
+                                                                                                    </li>
+
                                                                                                 </ul>
                                                                                             </div>
-                                                                                            <div class="tab-content mb-4">
-                                                                                                <div class="tab-pane fade show active" id="requirement5"
-                                                                                                    role="tabpanel" aria-labelledby="home-tab">
-                                                                                                    <p><strong>Yêu cầu: </strong><br>(1) Tạo ra một user
+                                                                                            <div
+                                                                                                class="tab-content mb-4">
+                                                                                                <div class="tab-pane fade show active"
+                                                                                                    id="requirement5"
+                                                                                                    role="tabpanel"
+                                                                                                    aria-labelledby="home-tab">
+                                                                                                    <p><strong>Yêu cầu:
+                                                                                                        </strong><br>(1)
+                                                                                                        Tạo ra một user
                                                                                                         scenario. <br>
-                                                                                                        (2) Chọn 1 bước trong user scenario để thiết kế 1
-                                                                                                        form giao diện Web trên công cụ thiết kế đã chọn.
-                                                                                                        Sau đó thiết kế trên Figma rồi chuyển sang html
-                                                                                                        tương ứng cho thiết kế này.
-                                                                                                        Upload lên github: trong file html có chèn hình ảnh
-                                                                                                        của user scenario ở (1) và đường dẫn của file thiết
+                                                                                                        (2) Chọn 1 bước
+                                                                                                        trong user
+                                                                                                        scenario để
+                                                                                                        thiết kế 1
+                                                                                                        form giao diện
+                                                                                                        Web trên công cụ
+                                                                                                        thiết kế đã
+                                                                                                        chọn.
+                                                                                                        Sau đó thiết kế
+                                                                                                        trên Figma rồi
+                                                                                                        chuyển sang html
+                                                                                                        tương ứng cho
+                                                                                                        thiết kế này.
+                                                                                                        Upload lên
+                                                                                                        github: trong
+                                                                                                        file html có
+                                                                                                        chèn hình ảnh
+                                                                                                        của user
+                                                                                                        scenario ở (1)
+                                                                                                        và đường dẫn của
+                                                                                                        file thiết
                                                                                                         kế ở (2).
                                                                                                     </p>
                                                                                                 </div>
-                                                                                                <div class="tab-pane fade" id="userScenario5"
-                                                                                                    role="tabpanel" aria-labelledby="contact-tab">
+                                                                                                <div class="tab-pane fade"
+                                                                                                    id="userScenario5"
+                                                                                                    role="tabpanel"
+                                                                                                    aria-labelledby="contact-tab">
                                                                                                     <div class="row">
-                                                                                                        <div class="paper">
-                                                                                                            <p><strong>Như muốn xem phim nên truy cập vào
-                                                                                                                    website và tiến hành việc đăng ký tài
-                                                                                                                    khoản để xem phim</strong></p>
+                                                                                                        <div
+                                                                                                            class="paper">
+                                                                                                            <p><strong>Như
+                                                                                                                    muốn
+                                                                                                                    xem
+                                                                                                                    phim
+                                                                                                                    nên
+                                                                                                                    truy
+                                                                                                                    cập
+                                                                                                                    vào
+                                                                                                                    website
+                                                                                                                    và
+                                                                                                                    tiến
+                                                                                                                    hành
+                                                                                                                    việc
+                                                                                                                    đăng
+                                                                                                                    ký
+                                                                                                                    tài
+                                                                                                                    khoản
+                                                                                                                    để
+                                                                                                                    xem
+                                                                                                                    phim</strong>
+                                                                                                            </p>
                                                                                                             <img src="assets/img/userScenario.jpg"
                                                                                                                 class="img-fluid"
                                                                                                                 style="width: 100%; height: 100%;">
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </div>
-                                                                                                <div class="tab-pane fade" id="design5" role="tabpanel"
+                                                                                                <div class="tab-pane fade"
+                                                                                                    id="design5"
+                                                                                                    role="tabpanel"
                                                                                                     aria-labelledby="contact-tab">
                                                                                                     <div class="row">
-                                                                                                        <div class="col-md-6">
-                                                                                                            <div class="paper">
-                                                                                                                <p><strong>Design on paper</strong></p>
+                                                                                                        <div
+                                                                                                            class="col-md-6">
+                                                                                                            <div
+                                                                                                                class="paper">
+                                                                                                                <p><strong>Design
+                                                                                                                        on
+                                                                                                                        paper</strong>
+                                                                                                                </p>
                                                                                                                 <img src="assets/img/lab5_1.jpg"
                                                                                                                     class="img-fluid"
                                                                                                                     style="width: 100%; height: 100%;">
                                                                                                             </div>
                                                                                                             <div class="d-flex justify-content-center"
                                                                                                                 style="margin-top: 30px;">
-                                                                                                                <button type="button" class="btn btn-lg"
+                                                                                                                <button
+                                                                                                                    type="button"
+                                                                                                                    class="btn btn-lg"
                                                                                                                     style="background-color: #0062d3; color: white;"
                                                                                                                     onclick="downloadAllImages(['assets/img/lab5_1.jpg'])">Download</button>
                                                                                                             </div>
                                                                                                         </div>
-                                                                                                        <div class="col-md-6">
-                                                                                                            <div class="figma">
-                                                                                                                <p><strong>Design on figma</strong></p>
+                                                                                                        <div
+                                                                                                            class="col-md-6">
+                                                                                                            <div
+                                                                                                                class="figma">
+                                                                                                                <p><strong>Design
+                                                                                                                        on
+                                                                                                                        figma</strong>
+                                                                                                                </p>
                                                                                                                 <img src="assets/img/lab5.jpg"
                                                                                                                     class="img-fluid">
                                                                                                             </div>
                                                                                                             <div class="d-flex justify-content-center"
                                                                                                                 style="margin-top: 80px;">
-                                                                                                                <button type="button" class="btn btn-lg"
+                                                                                                                <button
+                                                                                                                    type="button"
+                                                                                                                    class="btn btn-lg"
                                                                                                                     style="background-color: #0062d3; color: white;"
                                                                                                                     onclick="downloadAllImages(['assets/img/lab5.jpg'])">Download</button>
-                                    
+
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </div>
-                                                                                                    <div class="d-flex justify-content-center">
-                                                                                                        <button type="button" class="btn btn-lg"
+                                                                                                    <div
+                                                                                                        class="d-flex justify-content-center">
+                                                                                                        <button
+                                                                                                            type="button"
+                                                                                                            class="btn btn-lg"
                                                                                                             style="background-color: #0062d3; color: white;"><a
-                                                                                                                style="color: white;" target="_blank"
+                                                                                                                style="color: white;"
+                                                                                                                target="_blank"
                                                                                                                 href="https://www.figma.com/file/Famt6BexQfEwGpEBN400WD/Untitled?type=design&mode=design&t=UPSoA5QC7CHfVRh9-0">View
                                                                                                                 Design</a></button>
-                                    
+
                                                                                                     </div>
                                                                                                 </div>
-                                                                                                <div class="tab-pane fade" id="implement5" role="tabpanel"
+                                                                                                <div class="tab-pane fade"
+                                                                                                    id="implement5"
+                                                                                                    role="tabpanel"
                                                                                                     aria-labelledby="contact-tab">
-                                                                                                    <div class="contents order-2 order-md-1">
-                                                                                                        <div class="container">
+                                                                                                    <div
+                                                                                                        class="contents order-2 order-md-1">
+                                                                                                        <div
+                                                                                                            class="container">
                                                                                                             <div
                                                                                                                 class="row align-items-center justify-content-center">
-                                                                                                                <div class="col-md-7 py-5">
-                                                                                                                    <h3 class="mb-3">Đăng ký tài khoản xem
-                                                                                                                        phim</h3>
-                                                                                                                    <form action="#" method="post">
-                                                                                                                        <div class="row">
-                                                                                                                            <div class="col-md-6">
+                                                                                                                <div
+                                                                                                                    class="col-md-7 py-5">
+                                                                                                                    <h3
+                                                                                                                        class="mb-3">
+                                                                                                                        Đăng
+                                                                                                                        ký
+                                                                                                                        tài
+                                                                                                                        khoản
+                                                                                                                        xem
+                                                                                                                        phim
+                                                                                                                    </h3>
+                                                                                                                    <form
+                                                                                                                        action="#"
+                                                                                                                        method="post">
+                                                                                                                        <div
+                                                                                                                            class="row">
+                                                                                                                            <div
+                                                                                                                                class="col-md-6">
                                                                                                                                 <div
                                                                                                                                     class="form-group first">
-                                                                                                                                    <label for="fname"
+                                                                                                                                    <label
+                                                                                                                                        for="fname"
                                                                                                                                         style="margin: 10px 0px 10px;">Tên</label>
-                                                                                                                                    <input type="text"
+                                                                                                                                    <input
+                                                                                                                                        type="text"
                                                                                                                                         class="form-control"
                                                                                                                                         id="fname">
                                                                                                                                 </div>
                                                                                                                             </div>
-                                                                                                                            <div class="col-md-6">
+                                                                                                                            <div
+                                                                                                                                class="col-md-6">
                                                                                                                                 <div
                                                                                                                                     class="form-group first">
-                                                                                                                                    <label for="lname"
+                                                                                                                                    <label
+                                                                                                                                        for="lname"
                                                                                                                                         style="margin: 10px 0px 10px;">Họ</label>
-                                                                                                                                    <input type="text"
+                                                                                                                                    <input
+                                                                                                                                        type="text"
                                                                                                                                         class="form-control"
                                                                                                                                         id="lname">
                                                                                                                                 </div>
                                                                                                                             </div>
                                                                                                                         </div>
-                                                                                                                        <div class="row">
-                                                                                                                            <div class="col-md-12">
+                                                                                                                        <div
+                                                                                                                            class="row">
+                                                                                                                            <div
+                                                                                                                                class="col-md-12">
                                                                                                                                 <div
                                                                                                                                     class="form-group first">
-                                                                                                                                    <label for="email"
+                                                                                                                                    <label
+                                                                                                                                        for="email"
                                                                                                                                         style="margin: 10px 0px 10px;">Email</label>
-                                                                                                                                    <input type="email"
+                                                                                                                                    <input
+                                                                                                                                        type="email"
                                                                                                                                         class="form-control"
                                                                                                                                         id="email">
                                                                                                                                 </div>
                                                                                                                             </div>
                                                                                                                         </div>
-                                                                                                                        <div class="row">
-                                                                                                                            <div class="col-md-12">
+                                                                                                                        <div
+                                                                                                                            class="row">
+                                                                                                                            <div
+                                                                                                                                class="col-md-12">
                                                                                                                                 <div
                                                                                                                                     class="form-group first">
-                                                                                                                                    <label for="lname"
+                                                                                                                                    <label
+                                                                                                                                        for="lname"
                                                                                                                                         style="margin: 10px 0px 10px;">Số
-                                                                                                                                        điện thoại</label>
-                                                                                                                                    <input type="text"
+                                                                                                                                        điện
+                                                                                                                                        thoại</label>
+                                                                                                                                    <input
+                                                                                                                                        type="text"
                                                                                                                                         class="form-control"
                                                                                                                                         id="lname">
                                                                                                                                 </div>
                                                                                                                             </div>
                                                                                                                         </div>
-                                                                                                                        <div class="row">
-                                                                                                                            <div class="col-md-6">
-                                    
+                                                                                                                        <div
+                                                                                                                            class="row">
+                                                                                                                            <div
+                                                                                                                                class="col-md-6">
+
                                                                                                                                 <div
                                                                                                                                     class="form-group last mb-3">
-                                                                                                                                    <label for="password"
+                                                                                                                                    <label
+                                                                                                                                        for="password"
                                                                                                                                         style="margin: 10px 0px 10px;">Mật
                                                                                                                                         khẩu</label>
-                                                                                                                                    <input type="password"
+                                                                                                                                    <input
+                                                                                                                                        type="password"
                                                                                                                                         class="form-control"
                                                                                                                                         id="password">
                                                                                                                                 </div>
                                                                                                                             </div>
-                                                                                                                            <div class="col-md-6">
-                                    
+                                                                                                                            <div
+                                                                                                                                class="col-md-6">
+
                                                                                                                                 <div
                                                                                                                                     class="form-group last mb-3">
-                                                                                                                                    <label for="re-password"
+                                                                                                                                    <label
+                                                                                                                                        for="re-password"
                                                                                                                                         style="margin: 10px 0px 10px;">Xác
-                                                                                                                                        nhận mật
+                                                                                                                                        nhận
+                                                                                                                                        mật
                                                                                                                                         khẩu</label>
-                                                                                                                                    <input type="password"
+                                                                                                                                    <input
+                                                                                                                                        type="password"
                                                                                                                                         class="form-control"
                                                                                                                                         id="re-password">
                                                                                                                                 </div>
                                                                                                                             </div>
                                                                                                                         </div>
-                                    
+
                                                                                                                         <div
                                                                                                                             class="d-flex mb-5 mt-4 align-items-center">
                                                                                                                             <div
@@ -1180,16 +1484,34 @@
                                                                                                                                 <label
                                                                                                                                     class="control control--checkbox mb-0"><span
                                                                                                                                         class="caption">Tạo
-                                                                                                                                        tài khoản mới nghĩa
-                                                                                                                                        là bạn đồng ý với <a
+                                                                                                                                        tài
+                                                                                                                                        khoản
+                                                                                                                                        mới
+                                                                                                                                        nghĩa
+                                                                                                                                        là
+                                                                                                                                        bạn
+                                                                                                                                        đồng
+                                                                                                                                        ý
+                                                                                                                                        với
+                                                                                                                                        <a
                                                                                                                                             href="#">Điều
-                                                                                                                                            kiện và điều
-                                                                                                                                            khoản</a> và <a
+                                                                                                                                            kiện
+                                                                                                                                            và
+                                                                                                                                            điều
+                                                                                                                                            khoản</a>
+                                                                                                                                        và
+                                                                                                                                        <a
                                                                                                                                             href="#">Chính
-                                                                                                                                            sách và quyền
-                                                                                                                                            riêng tư</a> của
-                                                                                                                                        chúng tôi.</span>
-                                                                                                                                    <input type="checkbox"
+                                                                                                                                            sách
+                                                                                                                                            và
+                                                                                                                                            quyền
+                                                                                                                                            riêng
+                                                                                                                                            tư</a>
+                                                                                                                                        của
+                                                                                                                                        chúng
+                                                                                                                                        tôi.</span>
+                                                                                                                                    <input
+                                                                                                                                        type="checkbox"
                                                                                                                                         checked="checked" />
                                                                                                                                     <div
                                                                                                                                         class="control__indicator">
@@ -1199,100 +1521,153 @@
                                                                                                                         </div>
                                                                                                                         <div
                                                                                                                             class="d-flex align-items-center justify-content-center">
-                                                                                                                            <input type="submit"
+                                                                                                                            <input
+                                                                                                                                type="submit"
                                                                                                                                 value="Đăng ký"
                                                                                                                                 class="btn px-5 btn-primary">
-                                    
+
                                                                                                                         </div>
-                                    
+
                                                                                                                     </form>
                                                                                                                 </div>
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </div>
-                                    
-                                    
-                                    
+
+
+
                                                                                                 </div>
                                                                                             </div>
-                                    
+
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="tab-pane fade" id="ex2-tabs-3" role="tabpanel"
-                                                                            aria-labelledby="ex2-tab-3">
-                                                                            <div class="page-content page-container" id="page-content">
+                                                                        <div class="tab-pane fade" id="ex2-tabs-3"
+                                                                            role="tabpanel" aria-labelledby="ex2-tab-3">
+                                                                            <div class="page-content page-container"
+                                                                                id="page-content">
                                                                                 <div class="padding">
                                                                                     <div class="row container d-flex ">
                                                                                         <div class="">
                                                                                             <div class="mb-3">
-                                                                                                <ul class="nav nav-pills" id="myTab" role="tablist">
-                                                                                                    <li class="nav-item"><a class="nav-link active"
-                                                                                                            id="requirement-tab" data-toggle="pill"
-                                                                                                            href="#requirement6" role="tab"
+                                                                                                <ul class="nav nav-pills"
+                                                                                                    id="myTab"
+                                                                                                    role="tablist">
+                                                                                                    <li
+                                                                                                        class="nav-item">
+                                                                                                        <a class="nav-link active"
+                                                                                                            id="requirement-tab"
+                                                                                                            data-toggle="pill"
+                                                                                                            href="#requirement6"
+                                                                                                            role="tab"
                                                                                                             aria-controls="home"
-                                                                                                            aria-selected="true">Requirement</a></li>
-                                                                                                    <li class="nav-item"><a class="nav-link"
-                                                                                                            id="userScenario-tab" data-toggle="pill"
-                                                                                                            href="#ex1_6" role="tab" aria-controls="contact"
-                                                                                                            aria-selected="false">Ex1</a></li>
-                                                                                                    <li class="nav-item"><a class="nav-link"
-                                                                                                            id="userScenario-tab" data-toggle="pill"
-                                                                                                            href="#ex2_6" role="tab" aria-controls="contact"
-                                                                                                            aria-selected="false">Ex2</a></li>
+                                                                                                            aria-selected="true">Requirement</a>
+                                                                                                    </li>
+                                                                                                    <li
+                                                                                                        class="nav-item">
+                                                                                                        <a class="nav-link"
+                                                                                                            id="userScenario-tab"
+                                                                                                            data-toggle="pill"
+                                                                                                            href="#ex1_6"
+                                                                                                            role="tab"
+                                                                                                            aria-controls="contact"
+                                                                                                            aria-selected="false">Ex1</a>
+                                                                                                    </li>
+                                                                                                    <li
+                                                                                                        class="nav-item">
+                                                                                                        <a class="nav-link"
+                                                                                                            id="userScenario-tab"
+                                                                                                            data-toggle="pill"
+                                                                                                            href="#ex2_6"
+                                                                                                            role="tab"
+                                                                                                            aria-controls="contact"
+                                                                                                            aria-selected="false">Ex2</a>
+                                                                                                    </li>
                                                                                                 </ul>
                                                                                             </div>
-                                                                                            <div class="tab-content mb-4">
-                                                                                                <div class="tab-pane fade show active" id="requirement6"
-                                                                                                    role="tabpanel" aria-labelledby="home-tab">
-                                                                                                    <p><strong>Yêu cầu: </strong><br>
-                                                                                                        Trong menu Labs, tạo 1 menu Lab3 (file lab3.html)
-                                                                                                        sau đó tạo 2 tab Ex1, Ex2.<br>
-                                    
-                                                                                                        Ex1: Thiết kế một trang Web đơn giản sử dụng mẫu
-                                                                                                        F-pattern ==> chuyển sang html (ex1.html).<br>
-                                    
-                                                                                                        Ex2: Thiết kế một trang Web đơn giản sử dụng mẫu
-                                                                                                        Z-pattern ==> chuyển sang html (ex2.html).<br>
-                                    
-                                                                                                        Design: chụp lại hình ảnh để có cái nhìn tổng quan
-                                                                                                        về file thiết kế, có nút Download để download file
-                                                                                                        thiết kế về nếu muốn.<br>
-                                    
-                                                                                                        Implementation: nội dung phần hiện thực trên html<br>
-                                    
-                                                                                                        Upload lên Firebase / Github.
+                                                                                            <div
+                                                                                                class="tab-content mb-4">
+                                                                                                <div class="tab-pane fade show active"
+                                                                                                    id="requirement6"
+                                                                                                    role="tabpanel"
+                                                                                                    aria-labelledby="home-tab">
+                                                                                                    <p><strong>Yêu cầu:
+                                                                                                        </strong><br>
+                                                                                                        Trong menu Labs,
+                                                                                                        tạo 1 menu Lab3
+                                                                                                        (file lab3.html)
+                                                                                                        sau đó tạo 2 tab
+                                                                                                        Ex1, Ex2.<br>
+
+                                                                                                        Ex1: Thiết kế
+                                                                                                        một trang Web
+                                                                                                        đơn giản sử dụng
+                                                                                                        mẫu
+                                                                                                        F-pattern ==>
+                                                                                                        chuyển sang html
+                                                                                                        (ex1.html).<br>
+
+                                                                                                        Ex2: Thiết kế
+                                                                                                        một trang Web
+                                                                                                        đơn giản sử dụng
+                                                                                                        mẫu
+                                                                                                        Z-pattern ==>
+                                                                                                        chuyển sang html
+                                                                                                        (ex2.html).<br>
+
+                                                                                                        Design: chụp lại
+                                                                                                        hình ảnh để có
+                                                                                                        cái nhìn tổng
+                                                                                                        quan
+                                                                                                        về file thiết
+                                                                                                        kế, có nút
+                                                                                                        Download để
+                                                                                                        download file
+                                                                                                        thiết kế về nếu
+                                                                                                        muốn.<br>
+
+                                                                                                        Implementation:
+                                                                                                        nội dung phần
+                                                                                                        hiện thực trên
+                                                                                                        html<br>
+
+                                                                                                        Upload lên
+                                                                                                        Firebase /
+                                                                                                        Github.
                                                                                                     </p>
                                                                                                 </div>
-                                                                                                <div class="tab-pane fade" id="ex1_6" role="tabpanel"
+                                                                                                <div class="tab-pane fade"
+                                                                                                    id="ex1_6"
+                                                                                                    role="tabpanel"
                                                                                                     aria-labelledby="contact-tab">
-                                                                                                   
+
                                                                                                 </div>
-                                                                                                <div class="tab-pane fade" id="ex2_6" role="tabpanel"
+                                                                                                <div class="tab-pane fade"
+                                                                                                    id="ex2_6"
+                                                                                                    role="tabpanel"
                                                                                                     aria-labelledby="contact-tab">
-                                                                                                  
+
                                                                                                 </div>
                                                                                             </div>
-                                    
+
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="tab-pane fade" id="ex2-tabs-4" role="tabpanel"
-                                                                            aria-labelledby="ex2-tab-4">
+                                                                        <div class="tab-pane fade" id="ex2-tabs-4"
+                                                                            role="tabpanel" aria-labelledby="ex2-tab-4">
                                                                             Tab 4 content
                                                                         </div>
                                                                     </div>
                                                                     <!-- Tabs content -->
-                                    
+
                                                                 </div>
                                                             </div>
-                                                           
-                                                        </div>
 
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1300,7 +1675,6 @@
                                     </div>
                                 </div>
                                 <!-- Tabs content -->
-
                             </div>
                         </div>
                     </div>
